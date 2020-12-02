@@ -1,0 +1,2 @@
+include ':app', ':nativeServerLibrary'
+rootProject.name='NativeServiceApp'
