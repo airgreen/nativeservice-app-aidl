@@ -1,4 +1,4 @@
-This is a simple example for native service and app communcation via aidl. Native service server will add service nativeservice in service manager and app will connect nativeservice via ServiceManager.<br> 
+This is a simple example for native service and app communcation via aidl on android platform. Native service server will add service nativeservice in service manager and app will connect nativeservice via ServiceManager.<br> 
 When click start button, app will send start command to native service and native service will continues to return timestamps to app. Native service will stop sending data when click stop button.<br> 
 <br> 
 <br> 
