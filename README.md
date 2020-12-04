@@ -7,15 +7,15 @@ When click start button, app will send start command to native service and nativ
 2. Make a full build<br> 
 3. Put native-service to the root path of AOSP code.<br> 
 4. In the root path of AOSP code execute command source ./build/envsetup.sh<br> 
-5. Enter the directory native-service and execute command mm to build native-service and generate bin native_server.<br> 
+5. Enter the directory native-service and execute build command mm to build native-service and generate bin native_server.<br> 
 
-#### Manually start native service server with the following steps:
+#### Manually start native service server on android device with the following steps:
 1. adb root<br> 
 2. adb remount<br> 
 3. adb push native_server /system/bin/<br> 
 6. adb shell setenforce 0<br> 
 7. adb shell<br> 
-8. cd /system/bin<br> 
+8. cd /system/bin and execute chmod 777 native_server<br> 
 9. execute ./native_server to start native service<br> 
 <br> 
 Sometimes app can not connect to native service due to selinux permission problem. The step 6 setenforce 0 above used to put selinux in permissive mode and close selinux temporarily.<br> 
